@@ -122,7 +122,14 @@ public class Main {
         // Q12: To convert seconds to hours, minutes and seconds
 //        System.out.println("Enter seconds: ");
 //        int seconds = s.nextInt();
-//        System.out.println("The result is: " + () + ":" + () + ":" + ());
+//
+//        int hours = seconds / 3600;
+//        int restOfSeconds = seconds % 3600;
+//
+//        int minutes = restOfSeconds / 60;
+//        int sec = restOfSeconds % 60;
+//
+//        System.out.printf("The result is %02d:%02d:%02d ", hours, minutes, sec);
 
         // Q13: To print if the four numbers are equal or not
 //        System.out.println("Input the first number: ");
@@ -169,58 +176,68 @@ public class Main {
 //        }
 
          //Q15: To count positive, negative and zeros
-//        System.out.println("Please enter number (enter -1 to terminate): ");
-//        int enteredNum = s.nextInt();
 //
 //        int positiveCounter = 0;
 //        int negativeCounter = 0;
 //        int zeroCounter = 0;
 //
+//        System.out.println("Please enter number (enter -1 to terminate): ");
+//        int enteredNum = s.nextInt();
+//
 //        while(enteredNum != -1){
-//            System.out.println("Please enter number (enter -1 to terminate): ");
-//            enteredNum = s.nextInt();
 //
 //            if(enteredNum < 0){
 //                negativeCounter++;
 //            }
-//            else if(enteredNum == 0){
-//                zeroCounter++;
-//            }
 //            else if (enteredNum > 0){
 //                positiveCounter++;
 //            }
+//            else {
+//                zeroCounter++;
+//            }
+//
+//            System.out.println("Please enter number (enter -1 to terminate): ");
+//            enteredNum = s.nextInt();
 //
 //        }
-//        System.out.println(positiveCounter + "positives");
-//        System.out.println(zeroCounter + "zero");
-//        System.out.println(negativeCounter + "negatives");
+//        System.out.println(positiveCounter + " positives");
+//        System.out.println(zeroCounter + " zero");
+//        System.out.println(negativeCounter + " negatives");
 
         // Q16: To reverse an integer
 //        System.out.println("Please enter an integer: ");
 //        int randomInt = s.nextInt();
 //
-//        for( int i=randomInt.length()- ; ; ){
+//        int reversedInt = 0;
 //
+//        while(randomInt != 0){
+//            int digitInt = randomInt % 10; // gets the last digit
+//            reversedInt = reversedInt * 10 + digitInt; // adds it
+//            randomInt = randomInt / 10; // removes last digit
 //        }
+//        System.out.println("The output is " + reversedInt);
 
         // Q17: to display the largest and smallest numbers
 //        System.out.println("Please enter an integer: ");
-//        int largestInt = s.nextInt();
-//        int smallestInt = 0;
+//        int anyRandomInt = s.nextInt();
 //
-//        if (largestInt < smallestInt){
-//            smallestInt = largestInt;
-//        }
-//        else if(smallestInt > largestInt){
-//            largestInt = smallestInt;
+//        int largestInt = anyRandomInt;
+//        int smallestInt = anyRandomInt;
+//
+//        while(anyRandomInt != 0){
+//            System.out.println("Please enter an integer: ");
+//            anyRandomInt = s.nextInt();
+//
+//            if (anyRandomInt < smallestInt){
+//                smallestInt = anyRandomInt;
+//            }
+//            if(anyRandomInt > largestInt){
+//                largestInt = anyRandomInt;
+//            }
 //        }
 //
-//        while(){
-//
-//        }
 //        System.out.println("The largest number: " + largestInt);
-//        System.out.println("The largest number: " + smallestInt);
-
+//        System.out.println("The smallest number: " + smallestInt);
 
         // Q18: number of times of a character
 //        System.out.println("Enter a string: ");
@@ -238,23 +255,6 @@ public class Main {
 //            }
 //        }
 //        System.out.println("Number of a's: " + aLetterCounter);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
